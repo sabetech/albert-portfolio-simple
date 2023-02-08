@@ -184,7 +184,7 @@
             <h6 class="section-title mb-6">Portfolio</h6>
             <!-- row -->
             <div class="row">
-                <div class="col-md-4 portfolio-item" >
+                <div class="col-md-4 portfolio-item" data-details-index="0">
                     <a class="portfolio-card">
                         <img src="assets/imgs/game-dev.png" class="portfolio-card-img" alt="The first Pro HTML/CSS only page from scratch. I created based of a UI inspiration">
                         <span class="portfolio-card-overlay">
@@ -195,7 +195,7 @@
                         </span>                     
                     </a>
                 </div>
-                <div class="col-md-4 portfolio-item">
+                <div class="col-md-4 portfolio-item" data-details-index="1">
                     <a class="portfolio-card">
                         <img class="portfolio-card-img" src="assets/imgs/movie-schedule.png" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                         <span class="portfolio-card-overlay">
@@ -508,15 +508,108 @@
     <script type="text/javascript" >
         $(document).ready(function(){
             
+            const projects = [
+                {
+                    title: 'Afro Game Developer Conference Website',
+                    images: [
+                        'https://via.placeholder.com/150',
+                        'https://via.placeholder.com/150',
+                        'https://via.placeholder.com/150'
+                    ],
+                    description: 'This project is a website that is showcase the Annual Afro Game Developer Conference that seeks to gather developers in Africa and beyond for a meet up. This project harnesses the topics I learned from my first week in microverse to date',
+                    links: [
+                        {
+                            text: 'Live Preview',
+                            url: 'https://sabetech.github.io/afro-gamedev/'
+                        },
+                        {
+                            text: 'View Source',
+                            url: 'https://github.com/sabetech/afro-gamedev'
+                        }
+                    ]
+                },
+                {
+                    title: 'Movie Info',
+                    images: [
+                        'https://via.placeholder.com/150',
+                        'https://via.placeholder.com/150',
+                        'https://via.placeholder.com/150'
+                    ],
+                    caption: 'This project was about something that was really I thought and I now I feel like I\'m hearing voices',
+                    links: [
+                        {
+                            text: 'Live Preview',
+                            url: '#'
+                        },
+                        {
+                            text: 'View Source',
+                            url: '#'
+                        }
+                    ]
+                },
+                {
+                    title: 'Sample Project',
+                    images: [
+                        'https://via.placeholder.com/150',
+                        'https://via.placeholder.com/150',
+                        'https://via.placeholder.com/150'
+                    ],
+                    caption: 'This project was about something that was really I thought and I now I feel like I\'m hearing voices',
+                    links: [
+                        {
+                            text: 'Live Preview',
+                            url: '#'
+                        },
+                        {
+                            text: 'View Source',
+                            url: '#'
+                        }
+                    ]
+                },
+                {
+                    title: 'Sample Project',
+                    images: [
+                        'https://via.placeholder.com/150',
+                        'https://via.placeholder.com/150',
+                        'https://via.placeholder.com/150'
+                    ],
+                    caption: 'This project was about something that was really I thought and I now I feel like I\'m hearing voices',
+                    links: [
+                        {
+                            text: 'Live Preview',
+                            url: '#'
+                        },
+                        {
+                            text: 'View Source',
+                            url: '#'
+                        }
+                    ]
+                },
+                {
+                    title: 'Sample Project',
+                    images: [
+                        'https://via.placeholder.com/150',
+                        'https://via.placeholder.com/150',
+                        'https://via.placeholder.com/150'
+                    ],
+                    caption: 'This project was about something that was really
+                }
+            ]
+
             $('.portfolio-item').click(function(){
-                console.log("Portfolio item clicked!!")
                 
+                let project_index = $(this).attr('data-details-index');
+
                 $('.backdrop').fadeIn(200, () => 
                     {
                         $('.modal').fadeIn(200)
                     }
                 )
             });
+
+
+
+
 
             $('.project-close').click(function(){
                 
