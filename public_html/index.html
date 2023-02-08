@@ -461,12 +461,14 @@
         </div><!-- end of container -->
     </section><!-- end of contact section -->
 
+    <div class="backdrop"></div>
+
     <div class="modal">
+        <div class="project-close">
+            <i class="ti-close"></i>
+        </div>
         <div class="project-description">
             <h3 class="project-title">Sample Project</h3>
-            <div class="project-close">
-                <i class="ti-close"></i>
-            </div>
             <div class="img-grid">
                 <img src="https://via.placeholder.com/150">
                 <img src="https://via.placeholder.com/150">
@@ -508,15 +510,19 @@
             
             $('.portfolio-item').click(function(){
                 console.log("Portfolio item clicked!!")
-                $('.modal').fadeIn(200)
+                
+                $('.backdrop').fadeIn(200, () => 
+                    {
+                        $('.modal').fadeIn(200)
+                    }
+                )
             });
 
             $('.project-close').click(function(){
-                $('.modal').fadeOut(200)
+                
+                $('.backdrop').fadeOut(200, () => $('.modal').fadeOut(200))
             });
-
         });
     </script>
-
 </body>
 </html>
