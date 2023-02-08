@@ -6299,6 +6299,19 @@ a.close.disabled {
   overflow-y: auto;
 }
 
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1040;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .modal {
   padding: 40px;
   position: fixed;
@@ -6307,8 +6320,10 @@ a.close.disabled {
   background-color: white;
   display: none;
   width: 30%;
+  max-height: 60%;
   overflow: hidden;
   outline: 0;
+  z-index: 1050;
   box-shadow: 0 30px 40px rgba(0, 0, 0, 0.3);
 }
 
@@ -6435,16 +6450,6 @@ a.close.disabled {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
   outline: 0;
-}
-
-.modal-backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1040;
-  width: 100vw;
-  height: 100vh;
-  background-color: #000;
 }
 
 .modal-backdrop.fade {
