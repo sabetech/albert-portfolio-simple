@@ -206,7 +206,7 @@
                         </span>                         
                     </a>
                 </div>
-                <div class="col-md-4 portfolio-item">
+                <div class="col-md-4 portfolio-item" data-details-index="2">
                     <a class="portfolio-card">
                         <img class="portfolio-card-img" src="assets/imgs/react-web-admin.png" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
                         <span class="portfolio-card-overlay">
@@ -220,7 +220,7 @@
             </div><!-- end of row -->
             <!-- row -->
             <div class="row" style="margin-top: 50px">
-                <div class="col-md-4 portfolio-item">
+                <div class="col-md-4 portfolio-item" data-details-index="3">
                     <a class="portfolio-card">
                         <img src="assets/imgs/Calculator.png" class="portfolio-card-img" alt="The first Pro HTML/CSS only page from scratch. I created based of a UI inspiration">
                         <span class="portfolio-card-overlay">
@@ -231,7 +231,7 @@
                         </span>                     
                     </a>
                 </div>
-                <div class="col-md-4 portfolio-item">
+                <div class="col-md-4 portfolio-item" data-details-index="4">
                     <a class="portfolio-card">
                         <img class="portfolio-card-img" src="assets/imgs/nutrition.png" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                         <span class="portfolio-card-overlay">
@@ -242,7 +242,7 @@
                         </span>                         
                     </a>
                 </div>
-                <div class="col-md-4 portfolio-item">
+                <div class="col-md-4 portfolio-item" data-details-index="5">
                     <a class="portfolio-card">
                         <img class="portfolio-card-img" src="assets/imgs/anagkazo_app.jpeg" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
                         <span class="portfolio-card-overlay">
@@ -535,7 +535,7 @@
                         'https://via.placeholder.com/150',
                         'https://via.placeholder.com/150'
                     ],
-                    caption: 'This project was about something that was really I thought and I now I feel like I\'m hearing voices',
+                    caption: 'This is one of the many project I built during my time microverse',
                     links: [
                         {
                             text: 'Live Preview',
@@ -548,13 +548,13 @@
                     ]
                 },
                 {
-                    title: 'Sample Project',
+                    title: 'React Admin Panel',
                     images: [
                         'https://via.placeholder.com/150',
                         'https://via.placeholder.com/150',
                         'https://via.placeholder.com/150'
                     ],
-                    caption: 'This project was about something that was really I thought and I now I feel like I\'m hearing voices',
+                    caption: 'This is the admin panel for the data coming from the student client mobile app',
                     links: [
                         {
                             text: 'Live Preview',
@@ -567,13 +567,13 @@
                     ]
                 },
                 {
-                    title: 'Sample Project',
+                    title: 'React Redux Calculator Web App',
                     images: [
                         'https://via.placeholder.com/150',
                         'https://via.placeholder.com/150',
                         'https://via.placeholder.com/150'
                     ],
-                    caption: 'This project was about something that was really I thought and I now I feel like I\'m hearing voices',
+                    caption: 'This is one of many projects I built while in Microverse to test my react redux skills',
                     links: [
                         {
                             text: 'Live Preview',
@@ -586,13 +586,42 @@
                     ]
                 },
                 {
-                    title: 'Sample Project',
+                    title: 'Meal Nutrition Calculator',
                     images: [
                         'https://via.placeholder.com/150',
                         'https://via.placeholder.com/150',
                         'https://via.placeholder.com/150'
                     ],
-                    caption: 'This project was about something that was really
+                    caption: 'This web app has a large database of individual food items and their nutritional value. This app by some intelligent algorithms is able to determine the overall nutritional value of a meal',
+                    links: [
+                        {
+                            text: 'Live Preview',
+                            url: '#'
+                        },
+                        {
+                            text: 'View Source',
+                            url: '#'
+                        }
+                    ]
+                },
+                {
+                    title: 'Student Client App',
+                    images: [
+                        'https://via.placeholder.com/150',
+                        'https://via.placeholder.com/150',
+                        'https://via.placeholder.com/150'
+                    ],
+                    caption: 'This is student mobile app that helps track the activities of the student on the campus like attendance to various events and their current score.',
+                    links: [
+                        {
+                            text: 'Live Preview',
+                            url: '#'
+                        },
+                        {
+                            text: 'View Source',
+                            url: '#'
+                        }
+                    ]
                 }
             ]
 
@@ -602,6 +631,7 @@
 
                 $('.backdrop').fadeIn(200, () => 
                     {
+                        $('.project-caption').html(projects[project_index].caption);
                         $('.modal').fadeIn(200)
                     }
                 )
