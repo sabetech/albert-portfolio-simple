@@ -6319,7 +6319,7 @@ a.close.disabled {
   left: calc(50% - 15vw);
   background-color: white;
   display: none;
-  width: 30%;
+  width: 35%;
   max-height: 60%;
   overflow: hidden;
   outline: 0;
