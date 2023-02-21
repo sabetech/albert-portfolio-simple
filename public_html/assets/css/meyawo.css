@@ -6338,6 +6338,7 @@ a.close.disabled {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
+  margin-bottom: 30px;
 }
 
 .modal.fade .modal-dialog {
