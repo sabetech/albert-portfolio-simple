@@ -6327,6 +6327,31 @@ a.close.disabled {
   box-shadow: 0 30px 40px rgba(0, 0, 0, 0.3);
 }
 
+@media screen and (max-width: 768px) {
+  .modal {
+    padding: 5%;
+    position: fixed;
+    top: 25vh;
+    left: 0;
+    width: 100%;
+    max-height: 80%;
+    padding: 0;
+    z-index: 1050;
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+  }
+
+  .img-grid {
+    padding: 2%;
+    flex-direction: column;
+  }
+  .project-description {
+    padding: 3%;
+  }
+}
+
+/* WORK ON MEDIA QUERIES FOR LARGE AND SMALL SCREENS GO AND SLEEP!!! */
+
 .modal-dialog {
   position: relative;
   width: auto;
